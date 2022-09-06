@@ -1,36 +1,29 @@
-import Counter from "@components/Counter";
-import logo from "@assets/logo.svg";
+import React from "react";
 
 export default function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
+    <main>
+      <h1>Hello this is Home</h1>
 
       <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+        aliquid vel blanditiis. Iste earum tempore, corrupti distinctio nam
+        dignissimos incidunt eveniet in tempora libero! Possimus explicabo
+        architecto aut dolorem blanditiis magni porro maiores dignissimos
+        repellat rem voluptatum, magnam provident at illum atque fugit assumenda
+        eaque minima iste. Quaerat odit suscipit possimus nostrum, libero odio
+        est quo culpa tempore ex tenetur sed esse unde doloremque ea minus rerum
+        laboriosam eveniet labore ipsam voluptate officiis fugiat. Natus minima
+        voluptatem hic eum ad perferendis rerum animi, provident aliquid
+        quisquam, mollitia eaque enim eligendi consequatur nihil eveniet ex
+        corrupti delectus quidem consequuntur! Saepe repudiandae excepturi ut
+        atque dolorum quisquam voluptas laudantium sapiente, obcaecati
+        voluptatibus earum adipisci dolor maiores beatae delectus ab pariatur!
+        Fuga voluptatibus soluta quidem alias suscipit animi, nisi dolorum
+        adipisci veritatis veniam amet aut odio magni, nihil nobis fugit iste
+        expedita ut nulla quas consequuntur debitis? Nihil ipsam dicta saepe
+        temporibus molestiae!
       </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    </main>
   );
 }
