@@ -1,16 +1,16 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-function Services({ helmet }) {
+function Tarifs({ helmet }) {
   return (
     <div>
       <Helmet>
-        <title> {helmet.title} | Services </title>
-        <link rel="canonical" href={`${helmet.href}/Services`} />
+        <title> {helmet.title} | Tarifs </title>
+        <link rel="canonical" href={`${helmet.href}/Tarifs`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
     </div>
   );
 }
 
-export default Services;
+export default Tarifs;

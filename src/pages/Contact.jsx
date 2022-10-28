@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Form from "../components/Form";
 
-function Contact() {
+function Contact({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const [rdv, setRdv] = useState(true);
   return (
     <div className="flex flex-col align-center">
+      <Helmet>
+        <title> {helmet.title} | Contact </title>
+        <link rel="canonical" href={`${helmet.href}/Services`} />
+        <meta name="description" content={helmet.description} />
+      </Helmet>
       <h2>Nous joindre</h2>
       <section>
         <div className="flex justify-center margin1r0 ">
