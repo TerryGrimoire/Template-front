@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import Form from "../components/Form";
+import Form from "../components/Contact/Form";
 
 function Contact({ helmet }) {
   useEffect(() => {

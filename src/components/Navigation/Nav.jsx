@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import croix from "../assets/fermer.png";
+import croix from "../../assets/fermer.png";
 
 function Nav({ setOpenBurger }) {
   return (

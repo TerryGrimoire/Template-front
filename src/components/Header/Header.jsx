@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
-import Navbar from "./Navbar";
-import burger from "../assets/menu.png";
+import Nav from "../Navigation/Nav";
+import Navbar from "../Navigation/Navbar";
+import burger from "../../assets/menu.png";
+import logo from "../../assets/logo.png";
 
-function Burger() {
+function Burger({ helmet }) {
   const [openBurger, setOpenBurger] = useState(false);
 
   return (
@@ -17,9 +18,12 @@ function Burger() {
         <img
           src={burger}
           alt="menu de navigation sur le site internet - trois lignes de navigation"
+          className="burger"
         />
       </button>
-      <Link to="/">LOGO</Link>
+      <Link to="/">
+        <img src={logo} alt={`logo de ${helmet.title}`} className="logo" />
+      </Link>
       {openBurger && <Nav setOpenBurger={setOpenBurger} />}
       <div className="desktop">
         <Navbar setOpenBurger={setOpenBurger} />

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Tarifs from "./pages/Tarifs";
@@ -17,7 +17,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <Header />
+      <Header helmet={helmet} />
       <Routes>
         <Route path="/" element={<Home helmet={helmet} />} />
         <Route path="/Services" element={<Services helmet={helmet} />} />
