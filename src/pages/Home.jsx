@@ -1,8 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
-export default function Home() {
+export default function Home({ helmet }) {
   return (
     <main>
+      <Helmet>
+        <title> {helmet.title} | Accueil </title>
+        <link rel="canonical" href={helmet.href} />
+        <meta name="description" content={helmet.description} />
+      </Helmet>
       <h1>Hello this is Home</h1>
 
       <p>
